@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigation"
+            app:startDestination="@id/select">
+
+    <fragment android:id="@+id/select" android:name="com.android.example.mathnew.select" android:label="Select"
+              tools:layout="@layout/fragment_select">
+        <action android:id="@+id/action_select_to_calculator" app:destination="@id/calculator"/>
+    </fragment>
+    <fragment android:id="@+id/calculator" android:name="com.android.example.mathnew.calculator"
+              android:label="Calculator" tools:layout="@layout/fragment_calculator">
+        <action android:id="@+id/action_calculator_to_answer" app:destination="@id/answer"/>
+        <argument android:name="nameselect" app:argType="string"/>
+    </fragment>
+    <fragment android:id="@+id/answer" android:name="com.android.example.mathnew.Answer" android:label="Answer"
+              tools:layout="@layout/fragment_answer">
+        <action android:id="@+id/action_answer_to_select" app:destination="@id/select"/>
+        <argument android:name="anw" app:argType="string"/>
+        <argument android:name="form" app:argType="string"/>
+    </fragment>
+    <fragment android:id="@+id/aboutFragment"
+              android:label="About"
+              android:name="com.android.example.mathnew.AboutFragment"/>
+</navigation>

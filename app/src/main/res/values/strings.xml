@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">mathnew</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="aa">about</string>
+    <string name="share_success_text">Anw</string>
+    <string name="share">Share</string>
+
+    <string name="button">Button</string>
+    <string name="submit">SUBMIT</string>
+    <string name="x">X</string>
+    <string name="y">Y</string>
+    <string name="z">Z</string>
+    <string name="anw">Answer</string>
+</resources>
